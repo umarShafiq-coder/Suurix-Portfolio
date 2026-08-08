@@ -1,0 +1,34 @@
+.toggle{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:var(--bg-primary);
+
+    transition:var(--transition-normal);
+
+}
+
+.toggle:hover{
+
+    background:var(--color-secondary);
+
+    color:white;
+
+}
+
+.toggle svg {
+    position:relative;
+    top: 3px;
+}
+
+[data-theme="dark"] .toggle {
+  color: white;
+}

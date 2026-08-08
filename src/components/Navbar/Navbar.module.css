@@ -1,0 +1,187 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-light);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.logo img {
+  display: block;
+
+  width: 140px;
+  height: auto;
+}
+
+.wrapper {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navMenu {
+  display: flex;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navLinks a{
+
+    position:relative;
+
+    color:var(--text-secondary);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navLinks a:hover {
+  color: var(--color-secondary);
+}
+
+.navLinks a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-secondary);
+
+    transition:.3s;
+
+}
+
+.navLinks a:hover::after{
+
+    width:100%;
+
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menuButton {
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+}
+
+.desktopButton {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .desktopButton {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .navMenu {
+    position: absolute;
+
+    top: calc(100% + 0.75rem);
+    left: 1rem;
+    right: 1rem;
+
+    width: auto;
+
+    padding: 1rem;
+
+    background: var(--bg-secondary);
+
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0.25s ease;
+  }
+
+  .active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+  .navLinks {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0.25rem;
+  }
+
+  .navLinks a {
+    display: block;
+
+    padding: 0.8rem 1rem;
+
+    border-radius: 8px;
+  }
+
+  .navLinks a:hover {
+    background: rgba(255, 122, 26, 0.08);
+  }
+
+  .navLinks a::after {
+    display: none;
+  }
+}
+
+.scrolled{
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.activeLink {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.activeLink::after {
+  width: 100%;
+}

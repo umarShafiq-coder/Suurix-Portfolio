@@ -1,0 +1,55 @@
+.button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.6rem;
+
+    padding:1rem 2rem;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+    border:none;
+
+}
+
+.primary{
+
+    background:var(--color-primary);
+
+    color:white;
+
+}
+
+.primary:hover{
+
+    background:#16325D;
+
+}
+
+.secondary{
+
+    background:transparent;
+
+    border:2px solid var(--color-secondary);
+
+    color:var(--color-secondary);
+
+}
+
+.secondary:hover{
+
+    background:var(--color-secondary);
+
+    color:white;
+
+}

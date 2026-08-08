@@ -1,0 +1,320 @@
+.about {
+  position: relative;
+
+  padding: 8rem 0;
+
+  background: var(--bg-secondary);
+
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  max-width: 700px;
+
+  margin-bottom: 4rem;
+}
+
+.eyebrow {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: var(--color-secondary);
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.title {
+  margin: 0;
+
+  color: var(--text-primary);
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.title span {
+  color: var(--color-secondary);
+}
+
+.intro {
+  max-width: 600px;
+
+  margin-top: 1.25rem;
+
+  color: var(--text-secondary);
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 5rem;
+
+  align-items: center;
+}
+
+.codeCard {
+  position: relative;
+
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+
+  background: var(--color-primary);
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 60px rgba(7, 19, 32, 0.15);
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1rem 1.25rem;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #94a3b8;
+
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+.windowDots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.windowDots span {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #475569;
+}
+
+.codeBody {
+  padding: 2rem 1.5rem;
+
+  color: #cbd5e1;
+
+  font-family: monospace;
+  font-size: 0.9rem;
+
+  line-height: 2;
+}
+
+.codeBody p {
+  margin: 0;
+}
+
+.keyword {
+  color: #ff7a1a;
+}
+
+.variable {
+  color: #3b82f6;
+}
+
+.string {
+  color: #22c55e;
+}
+
+.codeFooter {
+  display: flex;
+  align-items: center;
+
+  gap: 0.6rem;
+
+  padding: 1rem 1.25rem;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #94a3b8;
+
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+.codeFooter svg {
+  color: #ff7a1a;
+}
+
+.textContent {
+  max-width: 600px;
+}
+
+.smallLabel {
+  display: block;
+
+  margin-bottom: 1rem;
+
+  color: var(--color-secondary);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+.textContent h3 {
+  margin: 0 0 1.5rem;
+
+  color: var(--text-primary);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+
+  letter-spacing: -0.03em;
+}
+
+.textContent h3 span {
+  color: var(--color-secondary);
+}
+
+.textContent > p {
+  margin-bottom: 1rem;
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.25rem;
+
+  margin-top: 2rem;
+}
+
+.value {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 1rem;
+}
+
+.icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 122, 26, 0.1);
+
+  color: var(--color-secondary);
+}
+
+.value h4 {
+  margin: 0 0 0.25rem;
+
+  color: var(--text-primary);
+
+  font-size: 0.95rem;
+}
+
+.value p {
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.aboutLink {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 0.5rem;
+
+  margin-top: 2rem;
+
+  color: var(--color-secondary);
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  transition:
+    gap 0.25s ease,
+    color 0.25s ease;
+}
+
+.aboutLink:hover {
+  gap: 0.8rem;
+
+  color: var(--color-accent);
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding: 6rem 0;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+
+    gap: 4rem;
+  }
+
+  .codeCard,
+  .textContent {
+    max-width: 700px;
+
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    padding: 5rem 0;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .codeBody {
+    padding: 1.5rem 1rem;
+
+    font-size: 0.72rem;
+
+    overflow-x: auto;
+  }
+
+  .textContent h3 {
+    font-size: 2rem;
+  }
+
+  .value {
+    gap: 0.75rem;
+  }
+}
