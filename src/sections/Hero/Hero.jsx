@@ -47,14 +47,18 @@ function Hero() {
           </p>
 
           <div className={styles.buttons}>
+            <a href="#projects" aria-label="View Projects">
             <Button variant="primary">
               View Projects
             </Button>
+            </a>
 
+            <a href="#contact" aria-label="Contact Me">
             <Button variant="secondary">
               Let's Talk
               <FiArrowRight />
             </Button>
+            </a>
           </div>
 
           <div className={styles.trust}>

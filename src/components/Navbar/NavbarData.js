@@ -20,6 +20,14 @@ export const NAV_LINKS = [
     label: "Projects",
   },
   {
+  id: "why-me",
+  label: "Why Me",
+  },
+  {
+  id: "process",
+  label: "Process",
+},
+  {
     id: "pricing",
     label: "Pricing",
   },

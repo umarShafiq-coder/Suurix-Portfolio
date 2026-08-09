@@ -66,9 +66,11 @@ className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}
           <ThemeToggle />
 
           <div className={styles.desktopButton}>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>
             <Button variant="primary">
               Let's Talk
             </Button>
+            </a>
           </div>
 
           <button

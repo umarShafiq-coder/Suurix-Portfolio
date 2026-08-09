@@ -1,0 +1,336 @@
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+  position: relative;
+
+  margin-top: 5rem;
+
+  background: var(--bg-dark);
+
+  border-top: 1px solid var(--border-light);
+
+  color: white;
+}
+
+.container {
+  position: relative;
+}
+
+/* ==============================
+   MAIN
+============================== */
+
+.main {
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1.2fr
+    1fr;
+
+  gap: 3rem;
+
+  padding: 5rem 0 4rem;
+}
+
+/* ==============================
+   BRAND
+============================== */
+
+.brand {
+  max-width: 300px;
+}
+
+.logo {
+  display: inline-block;
+
+  margin-bottom: 0.35rem;
+
+  color: white;
+
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+
+  letter-spacing: -0.04em;
+
+  transition: var(--transition-normal);
+}
+
+.logo:hover {
+  color: var(--color-secondary);
+}
+
+.tagline {
+  display: block;
+
+  margin-bottom: 1.25rem;
+
+  color: var(--color-secondary);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.brand p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.58);
+
+  font-size: var(--font-size-sm);
+
+  line-height: 1.7;
+}
+
+/* ==============================
+   COLUMNS
+============================== */
+
+.column {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.columnTitle {
+  display: block;
+
+  margin-bottom: 1.25rem;
+
+  color: var(--color-secondary);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+
+  letter-spacing: 0.1em;
+}
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+.links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.7rem;
+}
+
+.links a {
+  display: inline-flex;
+
+  align-items: center;
+
+  width: fit-content;
+
+  gap: 0.35rem;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: var(--font-size-sm);
+
+  transition: var(--transition-normal);
+}
+
+.links a svg {
+  font-size: 0.8rem;
+
+  opacity: 0;
+
+  transform: translate(-4px, 4px);
+
+  transition: var(--transition-normal);
+}
+
+.links a:hover {
+  color: white;
+
+  transform: translateX(3px);
+}
+
+.links a:hover svg {
+  opacity: 1;
+
+  transform: translate(0, 0);
+}
+
+/* ==============================
+   SERVICES
+============================== */
+
+.serviceLinks {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.7rem;
+}
+
+.serviceLinks span {
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: var(--font-size-sm);
+}
+
+/* ==============================
+   SOCIAL LINKS
+============================== */
+
+.socialLinks {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.7rem;
+}
+
+.socialLinks a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.65rem;
+
+  width: fit-content;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: var(--font-size-sm);
+
+  transition: var(--transition-normal);
+}
+
+.socialLinks a svg {
+  color: var(--color-secondary);
+
+  font-size: 1rem;
+}
+
+.socialLinks a:hover {
+  color: white;
+
+  transform: translateX(3px);
+}
+
+/* ==============================
+   BOTTOM
+============================== */
+
+.bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding: 1.5rem 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: var(--font-size-xs);
+}
+
+.builtWith {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1000px) {
+  .main {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .brand {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2.5rem;
+
+    padding: 3.5rem 0 3rem;
+  }
+
+  .brand {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .brand {
+    grid-column: span 1;
+  }
+
+  .bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+}
+
+.footerLink {
+  position: relative;
+
+  color: var(--text-secondary);
+
+  transition: color var(--transition-normal);
+}
+
+.footerLink::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--color-secondary);
+
+  transition: width var(--transition-normal);
+}
+
+.footerLink:hover {
+  color: var(--color-secondary);
+}
+
+.footerLink:hover::after {
+  width: 100%;
+}
+
+.motto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+
+  margin: 0;
+  padding-left: 1.2rem;
+
+  color: #fff;
+}
+
+.motto li::marker {
+  color: var(--color-secondary);
+}
