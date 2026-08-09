@@ -1,16 +1,85 @@
-# React + Vite
+# SUURIX — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A developer-focused portfolio built for SUURIX, showcasing web development services, projects, skills, and a direct connection between clients and the developer behind the work.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+SUURIX is a developer-led digital development brand focused on building modern, responsive, and practical web experiences.
 
-## React Compiler
+The portfolio is designed around a simple idea:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Professional agency experience. Direct developer relationship.**
 
-## Expanding the ESLint configuration
+Instead of creating unnecessary layers between the client and developer, SUURIX focuses on clear communication, thoughtful development, and solutions built around real business goals.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- Responsive design across desktop, tablet, and mobile
+- Light and dark mode
+- Responsive mobile navigation
+- SUURIX brand identity and custom favicon
+- Developer-focused visual design
+- Services showcase
+- Skills and technology showcase
+- Project-focused portfolio structure
+- Smooth animations and interactions
+- Reusable React components
+- CSS Modules for component-level styling
+- Clean and organized project structure
+- Performance-focused implementation
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- JavaScript
+- HTML5
+- CSS3
+- CSS Modules
+
+### Libraries
+
+- Framer Motion
+- React Icons
+
+### Development Tools
+
+- Vite
+- ESLint
+- Git
+- GitHub
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+│
+├── assets/
+│   ├── favicon.png
+│   └── suurix-logo.png
+│
+├── components/
+│   ├── Button/
+│   ├── Navbar/
+│   └── ThemeToggle/
+│
+├── sections/
+│   ├── About/
+│   ├── Hero/
+│   ├── Services/
+│   └── Skills/
+│
+├── styles/
+│   ├── globals.css
+│   ├── reset.css
+│   └── variables.css
+│
+├── App.jsx
+└── main.jsx
