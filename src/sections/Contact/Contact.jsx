@@ -195,7 +195,7 @@ transition={{ duration: 0.5, delay: 0.1 }}
         </h3>
 
         <div className={styles.contactLinks}>
-          <a href="#" className={styles.contactLink}>
+          <a href="https://wa.me/923327012007" className={styles.contactLink}>
             <FiMessageCircle />
 
             <div>
@@ -208,7 +208,7 @@ transition={{ duration: 0.5, delay: 0.1 }}
             <FiArrowUpRight />
           </a>
 
-          <a href="#" className={styles.contactLink}>
+          <a href="https://gmail.com" className={styles.contactLink}>
             <FiMail />
 
             <div>
@@ -221,12 +221,12 @@ transition={{ duration: 0.5, delay: 0.1 }}
             <FiArrowUpRight />
           </a>
 
-          <a href="#" className={styles.contactLink}>
+          <a href="https://www.linkedin.com/in/muhammad-umar-86a42a42b/" className={styles.contactLink}>
             <FiLinkedin />
 
             <div>
               <strong>LinkedIn</strong>
-              <a href="https://linkedin.com/in/umar-shafiq" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/muhammad-umar-86a42a42b/" target="_blank" rel="noreferrer">
                 <span>Connect professionally on LinkedIn</span>
               </a>
             </div>
@@ -234,7 +234,7 @@ transition={{ duration: 0.5, delay: 0.1 }}
             <FiArrowUpRight />
           </a>
 
-          <a href="#" className={styles.contactLink}>
+          <a href="https://github.com/umarShafiq-coder" className={styles.contactLink}>
             <FiGithub />
 
             <div>

@@ -128,7 +128,7 @@ function Footer() {
                 <span>Email</span>
               </a>
 
-              <a href="https://linkedin.com/in/umarshafiq" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/muhammad-umar-86a42a42b/" aria-label="LinkedIn" target="_blank" rel="noreferrer">
                 <FiLinkedin />
                 <span>LinkedIn</span>
               </a>
